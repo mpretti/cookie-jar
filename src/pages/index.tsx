@@ -21,16 +21,20 @@ export default function Home() {
       <main className="flex justify-center min-h-screen py-20 bg-gradient-to-b from-gray-50 via-gray-50 to-gray-100">
         <div>
           <h1 className="px-5 text-4xl font-bold leading-tight tracking-tight text-center sm:mt-4 sm:text-6xl">
+            <TokenImage token="shib" />
             Have a KIN ? Leave a KIN.
             <br />
             Need a KIN ? Take a KIN.
           </h1>
 
           <h2 className="max-w-4xl px-10 mx-auto mt-8 text-base tracking-tight text-center text-gray-600 sm:text-2xl md:mt-5 md:text-2xl">
+            <TokenImage token="shib" />
+            <br />
             Have a SHIB ? Leave a SHIB. <br /> Need a SHIB ? Take a SHIB.
           </h2>
 
           <h2 className="max-w-4xl px-10 mx-auto mt-8 text-base tracking-tight text-center text-gray-600 sm:text-2xl md:mt-5 md:text-2xl">
+            <TokenImage token="shib" />
             Have a ELON ? Leave a ELON. <br /> Need a ELON ? Take a ELON.
           </h2>
 
@@ -129,6 +133,10 @@ function InfoText({ text }) {
       {text}
     </span>
   )
+}
+
+function TokenImage(props) {
+  return <img src="/dogelon_mars.png" {...props} alt="dogelong_mars" />
 }
 
 function CheckIcon(props) {
