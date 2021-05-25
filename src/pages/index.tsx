@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Next.js advanced start template.</title>
+        <title>Have a KIN ? Leave a KIN. Need a KIN ? Take a KIN</title>
 
         <meta
           name="description"
@@ -21,14 +21,17 @@ export default function Home() {
       <main className="flex justify-center min-h-screen py-20 bg-gradient-to-b from-gray-50 via-gray-50 to-gray-100">
         <div>
           <h1 className="px-5 text-4xl font-bold leading-tight tracking-tight text-center sm:mt-4 sm:text-6xl">
-            Next.js
+            Have a KIN ? Leave a KIN.
             <br />
-            Advanced Starter
+            Need a KIN ? Take a KIN.
           </h1>
 
           <h2 className="max-w-4xl px-10 mx-auto mt-8 text-base tracking-tight text-center text-gray-600 sm:text-2xl md:mt-5 md:text-2xl">
-            Tailwind CSS 2.0, ESLint & Prettier without a single line of config!
-            Easily extendable zero-config template for pros and beginners.
+            Have a SHIB ? Leave a SHIB. <br /> Need a SHIB ? Take a SHIB.
+          </h2>
+
+          <h2 className="max-w-4xl px-10 mx-auto mt-8 text-base tracking-tight text-center text-gray-600 sm:text-2xl md:mt-5 md:text-2xl">
+            Have a ELON ? Leave a ELON. <br /> Need a ELON ? Take a ELON.
           </h2>
 
           <div className="px-4 sm:px-0">
@@ -41,15 +44,15 @@ export default function Home() {
             >
               <div className="flex flex-col justify-center rounded-l-lg bg-gray-50">
                 <FeatureList>
-                  <Feature main="Tailwind CSS">
+                  <Feature main="KIN">
                     Fast design workflow with <InfoText text="Tailwind CSS" />
                   </Feature>
 
-                  <Feature main="TypeScript">
+                  <Feature main="SHIB">
                     <InfoText text="TypeScript" /> by default
                   </Feature>
 
-                  <Feature main="ESLint config">
+                  <Feature main="ELON">
                     Customizable <InfoText text="ESLint config" />
                   </Feature>
 
