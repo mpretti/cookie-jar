@@ -21,7 +21,7 @@ export default function Home() {
       <main className="flex justify-center min-h-screen py-20 bg-gradient-to-b from-gray-50 via-gray-50 to-gray-100">
         <div>
           <h1 className="px-5 text-4xl font-bold leading-tight tracking-tight text-center sm:mt-4 sm:text-6xl">
-            <TokenImage token="shib" />
+            <TokenImage token="kin" />
             Have a KIN ? Leave a KIN.
             <br />
             Need a KIN ? Take a KIN.
@@ -34,8 +34,13 @@ export default function Home() {
           </h2>
 
           <h2 className="max-w-4xl px-10 mx-auto mt-8 text-base tracking-tight text-center text-gray-600 sm:text-2xl md:mt-5 md:text-2xl">
-            <TokenImage token="shib" />
+            <TokenImage token="dogelon_mars" />
             Have a ELON ? Leave a ELON. <br /> Need a ELON ? Take a ELON.
+          </h2>
+
+          <h2 className="max-w-4xl px-10 mx-auto mt-8 text-base tracking-tight text-center text-gray-600 sm:text-2xl md:mt-5 md:text-2xl">
+            <TokenImage token="mist" />
+            Have a MIST ? Leave a MIST. <br /> Need a MIST ? Take a MIST.
           </h2>
 
           <div className="px-4 sm:px-0">
@@ -49,27 +54,32 @@ export default function Home() {
               <div className="flex flex-col justify-center rounded-l-lg bg-gray-50">
                 <FeatureList>
                   <Feature main="KIN">
-                    Fast design workflow with <InfoText text="Tailwind CSS" />
+                    Fast design workflow with <InfoText text="Tailwind CSS" />{" "}
+                    <TokenImage token="kin" />
                   </Feature>
 
                   <Feature main="SHIB">
-                    <InfoText text="TypeScript" /> by default
+                    <InfoText text="TypeScript" /> by default{" "}
+                    <TokenImage token="shib" />
                   </Feature>
 
                   <Feature main="ELON">
-                    Customizable <InfoText text="ESLint config" />
+                    Customizable <InfoText text="ESLint config" />{" "}
+                    <TokenImage token="dogelon_mars" />
                   </Feature>
 
-                  <Feature main="Code formatting">
-                    <InfoText text="Code formatting" /> with Prettier
+                  <Feature main="Dogecoin">
+                    <InfoText text="Code formatting" /> with Prettier{" "}
+                    <TokenImage token="dogecoin" />
                   </Feature>
 
-                  <Feature main="Absolute imports">
+                  <Feature main="Solana">
                     Standardized <InfoText text="absolute imports" />
                   </Feature>
 
-                  <Feature main="Absolute imports">
-                    Ready-to-go <InfoText text="Jest" /> setup
+                  <Feature main="Ethereum">
+                    Ready-to-go <InfoText text="Jest" /> setup{" "}
+                    <TokenImage token="eth" />
                   </Feature>
                 </FeatureList>
               </div>
@@ -136,7 +146,10 @@ function InfoText({ text }) {
 }
 
 function TokenImage(props) {
-  return <img src="/dogelon_mars.png" {...props} alt="dogelong_mars" />
+  const { token } = props
+  return (
+    <img src={`${token.toString()}.png`} {...props} alt={token.toString()} />
+  )
 }
 
 function CheckIcon(props) {
